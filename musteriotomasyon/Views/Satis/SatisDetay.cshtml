@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewBag.Title = "Satis Detay";
+}
+
+@{
+    var FirmaAdi= "5";
+    var FirmaTel = "Boş";
+    var FirmaAdres = "";
+
+
+    foreach (musteriOtomasyon.Entity.Firmalar fr in ViewBag.firma)
+    {
+        FirmaAdi = fr.FirmaAdi;
+        FirmaTel = fr.Tel;
+        FirmaAdres = fr.FirmaAdres;
+    }
+
+    var SatisID = 0;
+    var Tarih = "";
+    var MusteriAdi = "";
+    var MusteriTel = "";
+    var MusteriAdres = ""; 
+    var MusteriEmail = "";
+    decimal ToplamTutar = 0;
+    var faturaKodu = 0;
+    foreach (musteriOtomasyon.Entity.Satislar st in ViewBag.satis)
+    {
+        SatisID = st.SatisID;
+        Tarih = st.Tarih.ToString();
+        MusteriAdi = st.MusteriAdi + " " + st.MusteriSoyadi;
+        MusteriTel = st.Ceptel;
+        MusteriAdres = st.Adres;
+        MusteriEmail = st.MusteriEmail;
+        ToplamTutar = st.GenelToplam;
+        faturaKodu = st.FaturaKodu;
+
+    }
+}
+<div class="card" id="prnt">
+    <div class="card-header bg-transparent header-elements-inline">
+        <h6 class="card-title">Detay</h6>
+        <div class="header-elements">
+            <button type="button" class="btn btn-light btn-sm"><i class="icon-file-check mr-2"></i> Save</button>
+            <a href="/Satis/satisfatura/@faturaKodu" target="_blank" class="btn btn-light btn-sm ml-3"><i class="icon-printer mr-2"></i> Print</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-4">
+                    <img src="../../../../global_assets/images/logo_demo.png" class="mb-3 mt-2" alt="" style="width: 120px;">
+                    <ul class="list list-unstyled mb-0">
+                        <li>@FirmaAdi</li>
+                        <li>@FirmaAdres</li>
+                        <li>@FirmaTel</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="mb-4">
+                    <div class="text-sm-right">
+                        <h4 class="text-primary mb-2 mt-md-2">Satış Numarası: #@SatisID</h4>
+                        <ul class="list list-unstyled mb-0">
+                            <li>Tarih: <span class="font-weight-semibold">@Tarih</span></li>
+                            @*<li>Due date: <span class="font-weight-semibold">May 12, 2015</span></li>*@
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-wrap">
+            <div class="mb-4 mb-md-2">
+                <span class="text-muted">Müşteri:</span>
+                <ul class="list list-unstyled mb-0">
+                    <li><h5 class="my-2">@MusteriAdi</h5></li>
+                    @*<li><span class="font-weight-semibold">Normand axis LTD</span></li>
+                    <li>3 Goodman Street</li>
+                    <li>London E1 8BF</li>*@
+                    <li>@MusteriAdres</li>
+                    <li>@MusteriTel</li>
+                    <li><a href="#">@MusteriEmail</a></li>
+                </ul>
+            </div>
+            <div class="mb-2 ml-auto">
+                <span class="text-muted">Ödeme :</span>
+                <div class="d-flex flex-wrap wmin-md-400">
+                    <ul class="list list-unstyled mb-0">
+                        <li><h5 class="my-2">Toplam Tutar:</h5></li>
+                        <li>Ödeme TÜrü:</li>
+                     
+                    </ul>
+                    <ul class="list list-unstyled text-right mb-0 ml-auto">
+                        <li><h5 class="font-weight-semibold my-2">@ToplamTutar ₺</h5></li>
+                        <li><span class="font-weight-semibold">Peşin / Taksit</span></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function printdiv(divName) {
+            var printContents = document.getElementById(divName).innerHTML;
+            var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+    <div class="table-responsive">
+        <table class="table table-lg">
+            <thead>
+                <tr>
+                    <th>Urun Adı</th>
+                    <th>Adet</th>
+                    <th>Fiyat</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (musteriOtomasyon.Entity.SatisDetay st in ViewBag.SatisDetay)
+                {
+
+
+                    <tr>
+                        <td>
+                           @st.UrunAdi
+                        </td>
+                        <td>
+                            <h6 class="mb-0">@st.Adet</h6>
+                        </td>
+                        <td>@st.Fiyat ₺</td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="card-body">
+        <div class="d-md-flex flex-md-wrap">
+            <div class="pt-2 mb-3">
+                <div class="mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/tr/a/ae/Emu-dau-logo.png"  width="150" alt="">
+                </div>
+               
+            </div>
+            <div class="pt-2 mb-3 wmin-md-400 ml-auto">
+                <h6 class="mb-3">Ödenmesi Gereken Toplam Tutar:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Ürünlerin Toplam Fiyatı:</th>
+                                <td class="text-right">@ToplamTutar ₺</td>
+                            </tr>
+                            <tr>
+                                <th>Vergi: <span class="font-weight-normal">(25%)</span></th>
+                                <td class="text-right">@*@ToplamTutar*@</td>
+                            </tr>
+                            <tr>
+                                <th>Total:</th>
+                                <td class="text-right text-primary"><h5 class="font-weight-semibold">@ToplamTutar ₺</h5></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-right mt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<div class="card-footer">
+        <span class="text-muted">Thank you for using Limitless. This invoice can be paid via PayPal, Bank transfer, Skrill or Payoneer. Payment is due within 30 days from the date of delivery. Late payment is possible, but with with a fee of 10% per month. Company registered in England and Wales #6893003, registered office: 3 Goodman Street, London E1 8BF, United Kingdom. Phone number: 888-555-2311</span>
+    </div>*@
+</div>
+

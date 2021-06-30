@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Kullanicilar";
+}
+
+
+
+@model List<musteriOtomasyon.Entity.Kullanici>
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+
+    <div class="card">
+
+
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Kullanıcı ekleme başarısız', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Kullanıcı ekleme başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "AyniVeri")
+        {
+            <script>
+                $.jGrowl('Bu kullanıcı zaten var.', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">Kullanıcılar</h5>
+            <div class="header-elements">
+                <a href="/Kullanici/KullaniciEkle" class="btn btn-primary">Yeni Kullanıcı</a>
+
+                <div class="list-icons">
+                    <a class="list-icons-item"
+                       data-action="collapse"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+        </div>
+        <table class="table datatable-basic">
+            <thead>
+                <tr>
+                    <th>Kullanıcı ID</th>
+                    <th>Adı</th>
+                    <th>Soyadı</th>
+                    <th>Durum</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (musteriOtomasyon.Entity.Kullanici kl in Model)
+
+                {
+                    <tr>
+                        <td>@kl.KullaniciID</td>
+                        <td>@kl.Adi</td>
+                        <td>@kl.Soyadi</td>
+                        <td>
+                            <div class="form-check form-check-switchery">
+                                <label class="form-check-label">
+                                    <input type="checkbox" onclick="redirect(@kl.KullaniciID)"
+                                           class="form-check-input-switchery" @(kl.Durum == "1" ? "checked" : " ")
+                                           data-fouc>
+                                    @(kl.Durum == "1" ? "Aktif" : "Pasif")
+                                </label>
+                                <script>
+                                    function redirect(id) {
+                                        var url = "/Kullanici/DurumDegistir/" + id;
+                                        window.location.href = url;
+                                    }
+                                </script>
+                            </div>
+                        </td>
+                        <td style="display:none "></td>
+                        <td style="display:none"></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

@@ -1,0 +1,36 @@
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csprojAssemblyReference.cache
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CopyComplete
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csprojAssemblyReference.cache
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CopyComplete
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\DAUYoklama.Common.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csprojAssemblyReference.cache
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CopyComplete
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriOtomasyon.Entity\bin\Debug\itextsharp.dll
+C:\Users\melek\OneDrive\Masaüstü\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csprojAssemblyReference.cache
+C:\Users\melek\OneDrive\Masaüstü\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CoreCompileInputs.cache
+C:\Users\melek\OneDrive\Masaüstü\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.dll
+C:\Users\melek\OneDrive\Masaüstü\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.pdb
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csprojAssemblyReference.cache
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.dll
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriOtomasyon.Entity\obj\Debug\musteriOtomasyon.Entity.pdb

@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "ServisEkle";
+}
+
+@section head{
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="/Content/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_select2.js"></script>
+}
+<div class="col-md-12">
+
+    <!-- Right buttons -->
+    <div class="card">
+        <div class="card-header header-elements-inline">
+            <h6 class="card-title">Servis Ekle</h6>
+            <div class="header-elements">
+                <div class="list-icons">
+                    <a class="list-icons-item" data-action="collapse"></a>
+                    @*<a class="list-icons-item" data-action="reload"></a>
+                        <a class="list-icons-item" data-action="remove"></a>*@
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <form action="/Servisler/YeniServis" method="post">
+                
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2">Müşteri:</label>
+                    <div class="col-lg-10">
+                        <div class="form-control-plaintext">
+                            @foreach (musteriOtomasyon.Entity.Satislar ms in ViewBag.Musteri)
+                            {
+                                @ms.MusteriAdi @ms.MusteriSoyadi
+                                <input type="hidden" value="@ms.MusteriID" name="MusteriID" />
+                                <input type="hidden" value="@ms.Tarih" name="Tarih" />
+                                <input type="hidden" value="@ms.FaturaKodu" name="FaturaKodu" />
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+
+                    <label class="col-form-label col-lg-2">Ürün Seçin:</label>
+                    <div class="col-lg-10">
+
+                        <select data-placeholder="Urun" class="form-control select-search" data-fouc name="UrunID">
+                            @foreach (musteriOtomasyon.Entity.SatisDetay ur in ViewBag.Urunler)
+                            {
+                                <option value="@ur.UrunID">@ur.UrunAdi</option>
+                            }
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2">Servis Sayısı:</label>
+                    <div class="col-lg-10">
+
+                        <input type="number" class="form-control" value="1" name="ServisSayisi" />
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2">Servis Period:</label>
+                    <div class="col-lg-10">
+
+                        <input type="number" min="1" class="form-control" value="1" name="Period" />
+
+                    </div>
+                </div>
+
+                <div class="form-group row mb-0">
+                    <div class="col-lg-10 ml-lg-auto text-right">
+                        <button type="submit" class="btn btn-light">İptal</button>
+
+                        <button type="submit" class="btn bg-blue ml-3">Kaydet <i class="icon-paperplane ml-2"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /right buttons -->
+    <!-- Left and right buttons (reversed) -->
+    <!-- /left and right buttons (reversed) -->
+</div>

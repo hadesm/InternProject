@@ -1,0 +1,186 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Müşteri Otomasyon - Giriş</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="/Content/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/global_assets/js/toast/build/toastr.css" rel="stylesheet" />
+
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="/Content/global_assets/js/main/jquery.min.js"></script>
+    <script src="/Content/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/ui/ripple.min.js"></script>
+    <script src="/Content/global_assets/js/toast/toastr.js"></script>
+
+    <script src="/Content/global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/notifications/noty.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <!-- /theme JS files -->
+</head>
+<body>
+        <div class="d-md-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-tree5"></i>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="navbar-nav">			</ul>
+            <span class="navbar-text ml-md-3">
+                <span class="badge badge-mark border-orange-300 mr-2"></span>
+                Merhaba!
+            </span>
+            @* <ul class="navbar-nav ml-md-auto">
+
+
+                <li class="nav-item">
+                     <a href="#" class="navbar-nav-link">
+                <i class="icon-switch2"></i>
+                <span class="d-md-none ml-2">Logout</span>
+            </a>
+        </li>
+            </ul>*@
+        </div>
+    
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Content area -->
+            <div class="content d-flex justify-content-center align-items-center">
+                <!-- Login form -->
+
+                <form class="login-form" method="post" action="/Kullanici/GirisYap">
+                    <div class="card mb-0">
+                       
+                        <div class="card-body">
+
+                            @if (ViewBag.Hata == "HataVar")
+                            {
+                                <script>
+                                    $.jGrowl('Lütfen bilgilerinizi kontrol edin.', {
+                                        header: 'Hata',
+                                        theme: 'bg-danger',
+                                        position: 'top-center'
+                                    });
+
+                                </script>
+                            }
+                            else if (ViewBag.Hata == "HataYok")
+                            {
+                                <script>
+                                    $.jGrowl('Firma kaydı başarılı', {
+                                        header: 'Başarılı',
+                                        theme: 'bg-success',
+                                        position: 'top-center'
+                                    });
+
+                                </script>
+                            }
+                            else if (ViewBag.Hata == "AyniVeri")
+                            {
+                                <script>
+                                    $.jGrowl('Bu firma zaten kayıtlı.', {
+                                        header: 'Hata',
+                                        theme: 'bg-danger',
+                                        position: 'top-center'
+                                    });
+
+                                </script>
+                            }
+
+                            <div class="text-center mb-3">
+                                <i class="icon-reading icon-2x text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1"></i>
+                                <h5 class="mb-0">Hesabınıza giriş yapın</h5>
+
+                                <span class="d-block text-muted">Lütfen bilgilerinizi girin</span>
+                            </div>
+                            <div class="form-group form-group-feedback form-group-feedback-left">
+                                <input type="text" class="form-control" placeholder="Firma Kodu" name="FirmaKod">
+                                <div class="form-control-feedback">
+                                    <i class="icon-sphere text-muted"></i>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-feedback form-group-feedback-left">
+                                <input type="text" class="form-control" placeholder="Kullanıcı Adı" name="Username">
+                                <div class="form-control-feedback">
+                                    <i class="icon-user text-muted"></i>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-feedback form-group-feedback-left">
+                                <input type="password" class="form-control" placeholder="Şifre" name="Sifre">
+                                <div class="form-control-feedback">
+                                    <i class="icon-lock2 text-muted"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> GİRİŞ YAP <i class="icon-circle-right2 ml-2"></i></button>
+                            </div>
+
+                            <div class="text-center">
+
+                                <span>
+                                    <a href="/Kullanici/SifreYenile">Şifremi unuttum!</a>
+                                </span>
+                                <div class="card"></div>
+                            </div>
+                            <div class="text-center">
+                                <div class="form-group text-center text-muted content-divider">
+                                    <span class="px-2">Hesabın yok mu?</span>
+                                </div>
+                                <a href="/Firma/FirmaKayit" class="btn btn-primary btn-block">KAYDOL</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /login form -->
+            </div>
+            <!-- /content area -->
+            <!-- Footer -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                        <i class="icon-unfold mr-2"></i>
+                        Footer
+                    </button>
+                </div>
+                
+                        <div class="navbar-collapse collapse" id="navbar-footer">
+                            <span class="navbar-text">
+                                © 2020 <a href="#">Müşteri Otomasyon Sistemi</a> <i class="icon-arrow-right22"></i> <a href="https://www.emu.edu.tr/tr" target="_blank">Doğu Akdeniz Üniversitesi</a>
+                            </span>
+
+                            <ul class="navbar-nav ml-lg-auto">
+                                <li class="nav-item"><i class="icon-lifebuoy mr-2"></i> Destek </li>
+                                
+                            </ul>
+                        </div>
+
+                        
+                    
+                </div>
+            </div>
+            <!-- /footer -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+</body>
+</html>

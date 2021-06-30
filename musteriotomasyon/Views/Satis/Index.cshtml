@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Satışları Listele";
+}
+
+
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+
+<div class="card">
+    <div class="card-header header-elements-inline">
+        <h5 class="card-title">Satışlar</h5>
+        <div class="header-elements">
+            <a href="/Satis/SatisYap" class="btn btn-primary">Yeni Satış </a>
+
+            <div class="list-icons">
+                <a class="list-icons-item"
+                   data-action="collapse"></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+    </div>
+    <table class="table datatable-basic">
+        <thead>
+            <tr>
+                <th>Personel</th>
+                <th>Müşteri</th>
+                <th>Genel Toplam</th>
+                <th>Tarih</th>
+                <th>Garanti Bitiş</th>
+                <th>Detay</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (musteriOtomasyon.Entity.Satislar st in ViewBag.satislar)
+
+            {
+               
+            <tr>
+                <td>@st.Adi  @st.Soyadi</td>
+                <td>@st.MusteriAdi @st.MusteriSoyadi </td>
+                <td>@(st.GenelToplam) </td>
+                <td>@st.Tarih </td>
+                <td>@st.GarantiBitis </td>
+
+                <td width="150">
+
+                    <a href="/Satis/SatisDetay/@st.FaturaKodu" class="badge badge-flat border-primary text-primary-600 ">
+                        <i class="icon-stack-text"></i>
+                    </a>
+
+                    <a href="/Servisler/ServisEkle/@st.FaturaKodu" class="badge badge-flat border-primary ">
+                        <i class="icon-cogs"></i> Servis Ekle
+                    </a>
+
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

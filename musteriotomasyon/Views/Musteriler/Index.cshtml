@@ -1,0 +1,88 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Müşteriler";
+}
+
+
+
+@model List<musteriOtomasyon.Entity.Musteriler>
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+
+    <div class="card">
+
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Müşteri Eklenemedi', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Müşteri Ekleme Başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">Müşteriler</h5>
+            <div class="header-elements">
+                <a href="/Musteriler/MusteriEkle" class="btn btn-primary">Yeni Müşteri</a>
+
+                <div class="list-icons">
+                    <a class="list-icons-item"
+                       data-action="collapse"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+        </div>
+        <table class="table datatable-basic">
+            <thead>
+                <tr>
+                    <th>Müşteri Adı</th>
+                    <th>Müşteri Soyadı</th>
+                    <th>Ceptel</th>
+                    <th>Evtel</th>
+                    <th>Adres</th>
+                    <th>Email</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (musteriOtomasyon.Entity.Musteriler ms in Model)
+
+                {
+                    <tr>
+                        <td>@ms.MusteriAdi</td>
+                        <td>@ms.MusteriSoyadi</td>
+                        <td>@ms.Ceptel</td>
+                        <td>@ms.Evtel</td>
+                        <td>@ms.Adres</td>
+                        <td>@ms.MusteriEmail</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

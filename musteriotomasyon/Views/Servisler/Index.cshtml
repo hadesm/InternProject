@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section head{
+    <!-- Theme JS files -->
+    <script src="/Content/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
+    <script src="~/Content/assets/js/servistakvim.js"></script>
+    <script src="~/Content/global_assets/js/plugins/ui/fullcalendar/lang/tr.js"></script>
+    <!-- /theme JS files -->
+   
+}
+
+<h2>Servisler</h2>
+
+          
+<!-- Basic view -->
+<div class="card">
+
+    @if (ViewBag.Hata == "HataVar")
+    {
+        <script>
+            $.jGrowl('Servis Güncellenemedi', {
+                header: 'Hata',
+                theme: 'bg-danger',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+    else if (ViewBag.Hata == "HataYok")
+    {
+        <script>
+            $.jGrowl('Servis Güncelleme Başarılı', {
+                header: 'Başarılı',
+                theme: 'bg-success',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+
+    <div class="card-header header-elements-inline">
+        <h5 class="card-title">Servis Takvimi</h5>
+        <div class="header-elements">
+            <div class="list-icons">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <p class="mb-3"></p>
+        <div class="fullcalendar-basic"></div>
+    </div>
+</div>
+

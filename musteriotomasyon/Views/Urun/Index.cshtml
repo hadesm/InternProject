@@ -1,0 +1,126 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Ürünler";
+}
+
+
+
+@model List<musteriOtomasyon.Entity.Urunler>
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+
+    <div class="card">
+
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Ürün Eklenemedi', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Ürün Ekleme Başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "GHataVar")
+        {
+            <script>
+                $.jGrowl('Fiyat Güncellemesi Yapılamadı', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "GHataYok")
+        {
+            <script>
+                $.jGrowl('Fiyat Güncellemesi Başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">Ürünler</h5>
+            <div class="header-elements">
+                <a href="/Urun/UrunEkle" class="btn btn-primary">Yeni Ürün</a>
+
+                <div class="list-icons">
+                    <a class="list-icons-item"
+                       data-action="collapse"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+        </div>
+        <table class="table datatable-basic">
+            <thead>
+                <tr>
+                    <th>Ürün ID</th>
+                    <th>Adı</th>
+                    <th>Stok</th>
+                    <th>Fiyat</th>
+                    <th>İşlem</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (musteriOtomasyon.Entity.Urunler ur in Model)
+
+                {
+                    <tr>
+                        <td>@ur.UrunKodu</td>
+                        <td>@ur.UrunAdi</td>
+                        <td>@ur.Stok</td>
+                        <td>@ur.Fiyat ₺</td>
+
+                        <td>
+                            <div class="form-check form-check-switchery">
+                                <label class="form-check-label">
+                                    <input type="checkbox" onclick="redirect(@ur.UrunID)"
+                                           class="form-check-input-switchery" @(ur.Durum == "1" ? "checked" : " ")
+                                           data-fouc>
+                                    @(ur.Durum == "1" ? "Aktif" : "Pasif")
+                                </label>
+                                <script>
+                                    function redirect(id) {
+                                        var url = "/Urun/DurumDegistir/" + id;
+                                        window.location.href = url;
+                                    }
+                                </script>
+                            </div>
+                        </td>
+                        <td style="display:none"></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

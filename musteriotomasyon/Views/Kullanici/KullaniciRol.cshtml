@@ -1,0 +1,153 @@
+﻿
+
+@{
+    ViewBag.Title = "Kullanıcı Rolleri";
+}
+
+@model List<musteriOtomasyon.Entity.KullaniciRol>
+
+
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+
+    <div class="card">
+
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Rol ekleme başarısız', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Rol ekleme başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "AyniVeri")
+        {
+            <script>
+                $.jGrowl('Bu kullanıcı bu role sahip.', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "Silindi")
+        {
+            <script>
+                $.jGrowl('Rol başarıyla silindi.', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "Silinmedi")
+        {
+            <script>
+                $.jGrowl('Rol silinemedi.', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">Kullanıcı Rolleri</h5>
+            <div class="header-elements">
+                <a href="/Kullanici/RolAta" class="btn btn-primary">Rol Ata</a>
+
+                <div class="list-icons">
+                    <a class="list-icons-item"
+                       data-action="collapse"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+            <table class="table datatable-basic">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Rol Adı</th>
+                        <th>Sil</th>
+
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (musteriOtomasyon.Entity.KullaniciRol krl in Model)
+
+                    {
+                        <tr>
+                            <td>@krl.Username</td>
+                            <td>@krl.Adi</td>
+                            <td>@krl.Soyadi</td>
+                            <td>@krl.RolAdi</td>
+                            <td class="text-center">
+                                <div class="list-icons">
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="modal" data-target="#modal_theme_danger-@krl.RolID" data-id="@krl.RolID" data-adi="Yazar" class="dropdown-item btnSil">
+                                            <i class="icon-trash"></i>
+                                        </a>
+                                        <div id="modal_theme_danger-@krl.RolID" class="modal fade" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-danger">
+                                                        <h6 class="modal-title"> Silme İşlemi </h6>
+                                                        <button type="button" class="close" data-dismiss="modal"> ×</button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6 class="font-weight-semibold"></h6>
+                                                        <p> @krl.KullaniciID kişisinin rolünü silmek istediğinize emin misiniz? </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link legitRipple" data-dismiss="modal"> Kapat </button>
+                                                        <a class="btn bg-danger legitRipple" id="rolSil" href="/Kullanici/KullaniciRolSil/@krl.KullaniciRolID">Sil</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td style="display:none"></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+

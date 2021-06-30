@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Roller";
+}
+
+
+
+@model List<musteriOtomasyon.Entity.Roller>
+<div class="card">
+    @if (ViewBag.Hata == "HataVar")
+    {
+        <script>
+            $.jGrowl('Rol ekleme başarısız', {
+                header: 'Hata',
+                theme: 'bg-danger',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+    else if (ViewBag.Hata == "HataYok")
+    {
+        <script>
+            $.jGrowl('Rol ekleme başarılı', {
+                header: 'Başarılı',
+                theme: 'bg-success',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+    else if (ViewBag.Hata == "AyniVeri")
+    {
+        <script>
+            $.jGrowl('Bu rol zaten var.', {
+                header: 'Hata',
+                theme: 'bg-danger',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+    else if (ViewBag.Hata == "Silindi")
+    {
+        <script>
+            $.jGrowl('Rol başarıyla silindi.', {
+                header: 'Başarılı',
+                theme: 'bg-success',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+    else if (ViewBag.Hata == "Silinmedi")
+    {
+        <script>
+            $.jGrowl('Rol silinemedi.', {
+                header: 'Hata',
+                theme: 'bg-danger',
+                position: 'top-center'
+            });
+
+        </script>
+    }
+
+    <div class="card-header header-elements-inline">
+        <h5 class="card-title">Roller</h5>
+        <div class="header-elements">
+            <div class="list-icons">
+                <a class="btn bg-blue ml-3 legitRipple"
+                   href="/Kullanici/RolEkle">Yeni Rol</a>
+                <a class="list-icons-item" data-action="collapse"></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Adı</th>
+                    <th class="text-center" style="width: 30px;">
+                        <i class="icon-menu-open2"></i>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (musteriOtomasyon.Entity.Roller rl in Model)
+                {
+                    <tr>
+                        <td>@rl.RolAdi</td>
+                        <td class="text-center">
+                            <div class="list-icons">
+                                <div class="dropdown">
+                                    <a href="#" class="list-icons-item"
+                                       data-toggle="dropdown">
+                                        <i class="icon-menu9"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="#" data-toggle="modal" data-target="#modal_theme_danger-@rl.RolID" data-id="@rl.RolID" data-adi="Yazar" class="dropdown-item btnSil">
+                                            <i class="icon-trash"></i>Sil
+                                        </a>
+                                    </div>
+                                    <div id="modal_theme_danger-@rl.RolID" class="modal fade" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h6 class="modal-title"> Silme İşlemi </h6>
+                                                    <button type="button" class="close" data-dismiss="modal"> ×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h6 class="font-weight-semibold"></h6>
+                                                    <p> @rl.RolAdi Adlı Rolu silmek istediğinize emin misiniz? </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-link legitRipple" data-dismiss="modal"> Kapat </button>
+                                                    <a class="btn bg-danger legitRipple" id="rolSil" href="/Kullanici/RolSil/@rl.RolID">Sil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

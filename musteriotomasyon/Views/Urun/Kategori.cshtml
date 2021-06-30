@@ -1,0 +1,186 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "Kategoriler";
+}
+
+
+
+@model List<musteriOtomasyon.Entity.Kategori>
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+
+   
+
+}
+
+    <div class="card">
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Kategori Eklenemedi', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Kategori Ekleme Başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+        else if (ViewBag.Hata == "AyniVeri")
+        {
+            <script>
+                $.jGrowl('Bu Kategori Zaten Var', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+
+        <div class="card-header header-elements-inline">
+            <h6 class="card-title">Kategoriler</h6>
+
+            <div class="header-elements">
+                <a href="/Urun/KategoriEkle" class="btn btn-primary"><i class="icon-plus2"></i>Yeni Kategori</a>
+
+                <div class="list-icons">
+                    <a class="list-icons-item"
+                       data-action="collapse"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+                <li class="nav-item"><a href="#justified-badges-tab1" class="nav-link active" data-toggle="tab"> Aktif Kategorileri</a></li>
+                <li class="nav-item"><a href="#justified-badges-tab2" class="nav-link" data-toggle="tab">Pasif Kategoriler</a></li>
+
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="justified-badges-tab1">
+                    <table class="table datatable-basic">
+                        <thead>
+                            <tr>
+                                <th>Kategori ID</th>
+                                <th>Kategori Adı</th>
+                                <th>İşlem</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (musteriOtomasyon.Entity.Kategori kt in Model)
+
+                            {
+                                if (kt.Durum == "1")
+                                {
+                                    <tr>
+                                        <td>@kt.KategoriID</td>
+                                        <td>@kt.KategoriAdi</td>
+
+
+                                        <td align="center">
+                                            <div class="form-check form-check-switchery">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" onclick="redirect(@kt.KategoriID)"
+                                                           class="form-check-input-switchery" @(kt.Durum == "1" ? "checked" : " ")
+                                                           data-fouc>
+                                                    @(kt.Durum == "1" ? "Aktif" : "Pasif")
+                                                </label>
+                                                <script>
+                                                    function redirect(id) {
+                                                        var url = "/Urun/KDurumDegistir/" + id;
+                                                        window.location.href = url;
+                                                    }
+                                                </script>
+                                            </div>
+                                        </td>
+                                        <td style="display:none"></td>
+                                        <td style="display:none"></td>
+                                        <td style="display:none"></td>
+
+
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="justified-badges-tab2">
+                    <table class="table datatable-basic">
+                        <thead>
+                            <tr>
+                                <th>Kategori ID</th>
+                                <th>Kategori Adı</th>
+                                <th>İşlem</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (musteriOtomasyon.Entity.Kategori kt in Model)
+
+                            {
+                                if (kt.Durum == "0")
+                                {
+                                    <tr>
+                                        <td>@kt.KategoriID</td>
+                                        <td>@kt.KategoriAdi</td>
+
+
+                                        <td align="center">
+                                            <div class="form-check form-check-switchery">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" onclick="redirect(@kt.KategoriID)"
+                                                           class="form-check-input-switchery" @(kt.Durum == "1" ? "checked" : " ")
+                                                           data-fouc>
+                                                    @(kt.Durum == "1" ? "Aktif" : "Pasif")
+                                                </label>
+                                                <script>
+                                                    function redirect(id) {
+                                                        var url = "/Urun/KDurumDegistir/" + id;
+                                                        window.location.href = url;
+                                                    }
+                                                </script>
+                                            </div>
+                                        </td>
+                                        <td style="display:none"></td>
+                                        <td style="display:none"></td>
+                                        <td style="display:none"></td>
+
+
+                                    </tr>
+                                }
+
+                            }
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>

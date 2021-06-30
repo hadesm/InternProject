@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Personel / Personel Ekle";
+}
+
+@section head{
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_layouts.js"></script>
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Basic layout-->
+        <div class="card">
+            <div class="card-header header-elements-inline">
+                <h5 class="card-title">Personel Ekle</h5>
+                <div class="header-elements">
+                    <div class="list-icons">
+                        <a class="list-icons-item" data-action="collapse"></a>
+                        <a class="list-icons-item" data-action="reload"></a>
+                        <a class="list-icons-item" data-action="remove"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="#">
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Adı:</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" placeholder="Personelin Adı">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Soyadı:</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" placeholder="Personelin soyadı">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Şifre:</label>
+                        <div class="col-lg-9">
+                            <input type="password" class="form-control" placeholder="Bir şifre girin">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Your state:</label>
+                        <div class="col-lg-9">
+                            <select class="form-control form-control-select2" data-fouc>
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                    <option value="CA">California</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="WA">Washington</option>
+                                </optgroup>
+                                <optgroup label="Mountain Time Zone">
+                                    <option value="AZ">Arizona</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="WY">Wyoming</option>
+                                </optgroup>
+                                <optgroup label="Central Time Zone">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="KY">Kentucky</option>
+                                </optgroup>
+                                <optgroup label="Eastern Time Zone">
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Cinsiyet:</label>
+                        <div class="col-lg-9">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-input-styled" name="gender" checked data-fouc>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-input-styled" name="gender" data-fouc>
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Foto :</label>
+                        <div class="col-lg-9">
+                            <input type="file" class="form-input-styled" data-fouc>
+                            <span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label">Adress:</label>
+                        <div class="col-lg-9">
+                            <textarea rows="5" cols="5" class="form-control" placeholder="Personelin adresi"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <a href="/Personel/Index" class="btn btn-primary"><i class="icon-arrow-left12"></i> Geri</a>
+                        <button type="submit" class="btn btn-primary">Ekle <i class="icon-plus22 ml-2"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /basic layout -->
+    </div>
+
+</div>

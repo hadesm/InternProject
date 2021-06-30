@@ -1,0 +1,191 @@
+﻿
+@{
+    ViewBag.Title = "SatisYap";
+}
+@section head{
+
+
+    <script src="/Content/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_select2.js"></script>
+   
+    <link href="~/Content/assets/css/sweetalert2.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/font-awesome.css" rel="stylesheet" />
+
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Basic layout-->
+        <div class="card">
+            <div class="card-header header-elements-inline">
+                <h5 class="card-title">Personel Ekle</h5>
+                <div class="header-elements">
+                    <div class="list-icons">
+                        <a class="list-icons-item" data-action="collapse"></a>
+                        <a class="list-icons-item" data-action="reload"></a>
+                        <a class="list-icons-item" data-action="remove"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+
+
+
+
+                <div class="row" style="margin-top:30px !important;">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" onkeyup="myFunction1()" id="myInput1" placeholder="Marka Ara">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" onkeyup="myFunction()" id="myInput" placeholder="Ürün Adı Ara">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-3">
+                        <select id="musSec" class="form-control select-search" data-fouc name="KullaniciID">
+                            <option value="-1">Müşteri Seçin</option>
+                            @foreach (musteriOtomasyon.Entity.Musteriler mus in ViewBag.Musteri)
+                            {
+                                <option value="@mus.MusteriID">@mus.MusteriAdi @mus.MusteriSoyadi</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <button id="iptal" class="btn btn-block btn-danger">Satış İptal</button>
+                    </div>
+                </div>
+                <div class="table-responsive kaydirma">
+                    <table id="tablo"></table>
+                </div>
+                <div class="row" style="margin-top:30px">
+                    <div class="col-lg-8">
+                        <table id="siparis">
+                            <thead><tr><th>Kaldır</th><th>Ürün Adı</th><th>Fiyat</th><th>Miktar</th><th>Toplam Tutar</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                        <div class="col-lg-5 col-sm-4" style="float:right;">
+                            <div class="panel">
+                                <div class="panel-heading" style="text-align:right !important;">
+                                    <span id="maxTutar">Toplam Tutar : 0 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3" style="text-align:center">
+                        @*<button id="indirimYap" value="0" class="btn btn-default waves-effect waves-light" type="button">
+                                <span class="btn-label"><i class="fa fa-check"></i></span>
+                                İndirim Uygula
+                            </button>
+                            <span style="margin-top:15px; display:block; text-align:center; height:40px; line-height:40px; border-top: 3px solid #e4e7ea; border-bottom: 1px solid #e4e7ea" class="box-title">Satış Türünü Seçiniz</span>
+                            <button id="nakitSatis" class="btn btn-success waves-effect waves-light" type="button">
+                                <span class="btn-label"><i class="fa fa-check"></i></span>
+                                Nakit
+                            </button>*@
+                        <button id="nakitSatis" class="btn btn-success waves-effect waves-light" type="button">
+                            <span class="btn-label"><i class="icon-check"></i></span>
+                            Tamamla
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+@section scripts{
+    <link href="~/Content/assets/css/duzenlenen.css" rel="stylesheet" />
+    <style>
+        th, td {
+            padding: 7px !important;
+            font-weight: bold !important;
+            text-align: center !important;
+        }
+
+        th {
+            color: #fff !important;
+            background-color: #03a9f3 !important;
+        }
+
+        .kaydirma {
+            max-height: 200px;
+            overflow: auto;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tablo");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput1");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tablo");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+    </script>
+
+    <script src="~/Content/assets/js/satis.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Urunler();
+        });
+    </script>
+}

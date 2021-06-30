@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Zam Uygula";
+}
+
+@section head{
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="/Content/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_select2.js"></script>
+}
+
+@*<h2>Zam Uygula</h2>*@
+    <div class="card">
+
+        @if (ViewBag.Hata == "HataVar")
+        {
+            <script>
+                $.jGrowl('Ürün Eklenemedi', {
+                    header: 'Hata',
+                    theme: 'bg-danger',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+        else if (ViewBag.Hata == "HataYok")
+        {
+            <script>
+                $.jGrowl('Ürün Ekleme Başarılı', {
+                    header: 'Başarılı',
+                    theme: 'bg-success',
+                    position: 'top-center'
+                });
+
+            </script>
+        }
+
+        <ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+            <li class="nav-item"><a href="#justified-badges-tab1" class="nav-link active" data-toggle="tab">Kategorilere Zam Uygula</a></li>
+            <li class="nav-item"><a href="#justified-badges-tab2" class="nav-link" data-toggle="tab">Ürünlere Zam Uygula</a></li>
+
+        </ul>
+        <div class="card-body">
+
+            <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="justified-badges-tab1">
+                    <form action="/Urun/KategoriZam" method="post">
+                        <div class="form-group row">
+                            <label class="col-form-label col-lg-2">Kategori:</label>
+                            <div class="col-lg-10">
+                                <select data-placeholder="Kategoriler" class="form-control select-search" data-fouc name="KategoriID">
+                                    @foreach (musteriOtomasyon.Entity.Kategori kt in ViewBag.kategori)
+                                    {
+                                        <option value="@kt.KategoriID">@kt.KategoriAdi</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-lg-2">Zam Miktarı (%):</label>
+                            <div class="col-lg-10">
+                                <input type="number" min="1" class="form-control" name="ZamMiktari" />
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-lg-10 ml-lg-auto text-right">
+                                <button type="submit" class="btn btn-light">İptal</button>
+                                <button type="submit" class="btn bg-blue ml-3">Kaydet <i class="icon-paperplane ml-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="justified-badges-tab2">
+                    <form action="/Urun/UrunZam" method="post">
+                        <div class="form-group row">
+                            <label class="col-form-label col-lg-2">Ürün:</label>
+                            <div class="col-lg-10">
+                                <select data-placeholder="Ürünler" class="form-control select-search" data-fouc name="UrunID">
+                                    @foreach (musteriOtomasyon.Entity.Urunler ur in ViewBag.urunler)
+                                    {
+                                        <option value="@ur.UrunID">@ur.UrunAdi</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-lg-2">Zam Miktarı (%):</label>
+                            <div class="col-lg-10">
+                                <input type="number" min="1" class="form-control" name="ZamMiktarı" />
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-lg-10 ml-lg-auto text-right">
+                                <button type="submit" class="btn btn-light">İptal</button>
+                                <button type="submit" class="btn bg-blue ml-3">Kaydet <i class="icon-paperplane ml-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+

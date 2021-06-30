@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Servis Düzenle";
+}
+
+@section head{
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/styling/switch.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="/Content/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="/Content/global_assets/js/demo_pages/form_select2.js"></script>
+    <link href="~/Content/global_assets/src/css/datepicker.min.css" rel="stylesheet" type="text/css">
+
+    <script src="~/Content/global_assets/src/js/datepicker.min.js"></script>
+    <script src="~/Content/global_assets/src/js/i18n/datepicker.en.js"></script>
+    
+
+
+
+}
+<div class="col-md-12">
+
+
+    <!-- Right buttons -->
+    <div class="card">
+        <div class="card-header header-elements-inline">
+            <h6 class="card-title">Servis Düzenle</h6>
+            <div class="header-elements">
+                <div class="list-icons">
+                    <a class="list-icons-item" data-action="collapse"></a>
+                    <a class="list-icons-item" data-action="reload"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <form action="/Servisler/ServisGuncelle" method="post">
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2">Müşteri:</label>
+                    <div class="col-lg-10">
+                        <div class="form-control-plaintext">
+                            @foreach (musteriOtomasyon.Entity.Servisler ms in ViewBag.Servis)
+                            {
+                                @(ms.MusteriAdi + ' ' + ms.MusteriSoyadi)
+                                <input type="hidden" value="@ms.MusteriID" name="MusteriID" />
+                                <input type="hidden" value="@ms.Tarih" name="Tarih" />
+                                <input type="hidden" value="@ms.FaturaKodu" name="FaturaKodu" />
+                                <input type="hidden" value="@ms.ServisID" name="ServisID" />
+
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2">Ürün:</label>
+                    <div class="col-lg-10">
+                        <div class="form-control-plaintext">
+                            @foreach (musteriOtomasyon.Entity.Urunler ur in ViewBag.Urun)
+                            {
+                                
+                                @ur.UrunAdi
+                                
+
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                @foreach (musteriOtomasyon.Entity.Servisler ms in ViewBag.Servis)
+                {
+
+                    <div class="form-group row">
+
+                        <label class="col-form-label col-lg-2">Servis Tarihi Değiştir:</label>
+                        <div class="col-lg-10">
+
+                            <input type="datetime" name="ServisTarih" class="datepicker-here form-control" value="@ms.ServisTarih.ToString("dd/MM/yyyy")" data-language='en' />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Servis Durumu:</label>
+                        <div class="col-lg-10">
+                            <div class="form-check">
+                                <label class="form-check-label"> </label>
+                                <input type="checkbox" onclick="redirect(@ms.ServisID)" class="form-check-input-styled-danger" @(ms.Durum == "1" ? "checked" : "") data-fouc="" />
+                                <script>
+                                    function redirect(id) {
+                                        var url = "/Servisler/DurumDegistir/" + id;
+                                        window.location.href = url;
+                                    }
+                                </script>
+                                @(ms.Durum == "1" ? "Yapıldı" : "Yapılmadı")
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div class="form-group row mb-0">
+                    <div class="col-lg-10 ml-lg-auto text-right">
+                        <button type="submit" class="btn btn-light">İptal</button>
+
+                        <button type="submit" class="btn bg-blue ml-3">Kaydet <i class="icon-paperplane ml-2"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /right buttons -->
+    <!-- Left and right buttons (reversed) -->
+    <!-- /left and right buttons (reversed) -->
+</div>
+

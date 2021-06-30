@@ -1,0 +1,67 @@
+﻿table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.color:-moz-placeholder { /* Firefox 4 - 18 arası */
+    opacity: 0.4 !important;
+    color: #000 !important;
+    -webkit-tap-highlight-color: #000 !important;
+}
+
+.color::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.4 !important;
+    color: #000 !important;
+    -webkit-tap-highlight-color: #000 !important;
+}
+
+.color:-ms-input-placeholder { /* Internet Explorer 10+ */
+    opacity: 0.4 !important;
+    color: #000 !important;
+    -webkit-tap-highlight-color: #000 !important;
+}
+
+.color::-webkit-input-placeholder { /* WebKit browsers */
+    opacity: 0.4 !important;
+    color: #000 !important;
+    -webkit-tap-highlight-color: #000 !important;
+}
+
+
+
+
+
+#myInput {
+   
+   
+}
+
+#tablo {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+ 
+}
+
+    #tablo th, #tablo td {
+     
+    }
+
+    #tablo tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd;
+    }
+
+        #tablo tr.header, #tablo tr:hover {
+            /* Add a grey background color to the table header and on hover */
+            background-color: #f1f1f1;
+        }

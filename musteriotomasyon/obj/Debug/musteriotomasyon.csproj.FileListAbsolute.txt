@@ -1,0 +1,323 @@
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll.config
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.pdb
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe.config
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.rsp
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe.config
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.rsp
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Managed.Core.targets
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.AppContext.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Collections.Immutable.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Console.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Compression.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.AccessControl.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.AccessControl.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Claims.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Encoding.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Primitives.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Principal.Windows.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Text.Encoding.CodePages.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.ValueTuple.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.ReaderWriter.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XmlDocument.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.XDocument.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe.config
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.rsp
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe.config
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Razor.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Deployment.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Razor.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Helpers.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Mvc.resources.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csprojAssemblyReference.cache
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CoreCompileInputs.cache
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CopyComplete
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.dll
+c:\users\hasim\source\repos\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll.config
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe.config
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.rsp
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe.config
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.rsp
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.AppContext.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Console.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Claims.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe.config
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.rsp
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csprojAssemblyReference.cache
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CopyComplete
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.dll
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll.config
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe.config
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.rsp
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe.config
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.rsp
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.AppContext.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Console.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Compression.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Claims.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.ValueTuple.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe.config
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.rsp
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.pdb
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Razor.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csprojAssemblyReference.cache
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CoreCompileInputs.cache
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CopyComplete
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.dll
+C:\Users\hasim\Desktop\project\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll.config
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.exe.config
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csc.rsp
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.exe.config
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\csi.rsp
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.AppContext.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Console.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Claims.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.exe.config
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\vbc.rsp
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\DAUYoklama.Common.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.Entity.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\musteriOtomasyon.ORM.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Razor.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Webpages.Razor.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Helpers.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\System.Web.Mvc.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csprojAssemblyReference.cache
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CopyComplete
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.dll
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.pdb
+C:\Users\Ahmet Diler\Desktop\project222\musteriotomasyon\musteriotomasyon\bin\itextsharp.dll
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csprojAssemblyReference.cache
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.csproj.CoreCompileInputs.cache
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.dll
+C:\Users\Melek\Desktop\2020staj\Customer Automation and Sale System -FINAL PROJECT\musteriotomasyon\musteriotomasyon\obj\Debug\musteriotomasyon.pdb

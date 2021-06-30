@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Personel İşlemleri";
+}
+
+@section head{
+
+    <script src="/Content/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="/Content/global_assets/js/demo_pages/datatables_basic.js"></script>
+}
+
+<div class="card">
+    <div class="card-header header-elements-inline">
+        <h5 class="card-title">Personeller</h5>
+        <div class="header-elements">
+            <a href="/Personel/PersonelEkle" class="btn btn-primary "><i class="icon-plus2"></i> Yeni personel</a>
+            @*<div class="list-icons">
+                    <a class="list-icons-item" data-action="collapse"></a>
+                    <a class="list-icons-item" data-action="reload"></a>
+                    <a class="list-icons-item" data-action="remove"></a>
+                </div>*@
+        </div>
+    </div>
+    <div class="card-body">
+        Bu kısımdan personelleri düzenleyebilir ve silebilirsiniz.
+    </div>
+    <table class="table datatable-save-state">
+        <thead>
+            <tr>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Tel</th>
+                <th>Adress</th>
+                <th>Status</th>
+                <th class="text-center">İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marth</td>
+                <td><a href="#">Enright</a></td>
+                <td>Traffic Court Referee</td>
+                <td>22 Jun 1972</td>
+                <td><span class="badge badge-success">Active</span></td>
+                <td class="text-center">
+
+                    <button type="button" class="badge badge-flat border-primary text-primary-600 "><i class="icon-pencil"></i></button>
+                    <button type="button" class="badge badge-flat border-primary text-primary-600 "><i class="icon-trash"></i></button>
+
+                    @*<div class="list-icons">
+                            <div class="dropdown">
+                                <a href="#" class="list-icons-item" data-toggle="dropdown">
+                                    <i class="icon-menu9"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+                                </div>
+                            </div>
+                        </div>*@
+                </td>
+            </tr>
+            <tr>
+                <td>Gizem</td>
+                <td><a href="#">Diler</a></td>
+                <td>(xxx)xxxxxxx</td>
+                <td>22 Jun 1972</td>
+                <td><span class="badge badge-success">Active</span></td>
+                <td class="text-center">
+
+                    <button type="button" class="badge badge-flat border-primary text-primary-600 "><i class="icon-pencil"></i></button>
+                    <button type="button" class="badge badge-flat border-primary text-primary-600 "><i class="icon-trash"></i></button>
+
+                    @*<div class="list-icons">
+                            <div class="dropdown">
+                                <a href="#" class="list-icons-item" data-toggle="dropdown">
+                                    <i class="icon-menu9"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+                                    <a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+                                </div>
+                            </div>
+                        </div>*@
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+
+

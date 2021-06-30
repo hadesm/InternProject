@@ -1,0 +1,156 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+@{
+    ViewBag.Title = "Kullanıcı Kayıt";
+}
+
+@model List<musteriOtomasyon.Entity.Kullanici>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Müşteri Otomasyon - Kayıt</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="/Content/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="/Content/global_assets/js/main/jquery.min.js"></script>
+    <script src="/Content/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="/Content/global_assets/js/plugins/ui/ripple.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="/Content/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    
+    <script src="/Content/global_assets/js/demo_pages/login.js"></script>
+    <!-- /theme JS files -->
+</head>
+<body>
+
+
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Content area -->
+            <div class="content d-flex justify-content-center align-items-center">
+                <!-- Registration form -->
+                <form action="index.html" class="flex-fill">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="card mb-0">
+                                <div class="card-body">
+                                    <div class="text-center mb-3">
+                                        <i class="icon-plus3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3 mt-1"></i>
+                                        <h5 class="mb-0">Hesap Oluşturma</h5>
+                                        <span class="d-block text-muted">Tüm alanları doldurunuz</span>
+                                    </div>
+                                    <div class="form-group form-group-feedback form-group-feedback-right">
+                                        <input type="text" class="form-control" placeholder="Firma Vergi No" name="VergiNo">
+                                        <div class="form-control-feedback">
+                                            <i class="icon-certificate text-muted"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="text" class="form-control" placeholder="Firma Adı"  name="FirmaAdı">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-city text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="text" class="form-control" placeholder="Firma Tel"  name="Tel">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-phone2 text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="password" class="form-control" placeholder="Sifre"  name="FirmaSifre">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-user-lock text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="password" class="form-control" placeholder="Sifreyi tekrarla"  name="FirmaSifre">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-user-lock text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="email" class="form-control" placeholder="Email" name="FirmaEmail">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-mention text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-group-feedback form-group-feedback-right">
+                                                <input type="email" class="form-control" placeholder="Email tekrarla" name="FirmaEmail">
+                                                <div class="form-control-feedback">
+                                                    <i class="icon-mention text-muted"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <button type="submit" class="btn bg-teal-400 btn-labeled btn-labeled-right"><b><i class="icon-plus3"></i></b> KAYDET </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /registration form -->
+            </div>
+            <!-- /content area -->
+            <!-- Footer -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                        <i class="icon-unfold mr-2"></i>
+                        Footer
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+                        © 2020 <a href="#">Müşteri Otomasyon Sistemi</a> <i class="icon-arrow-right22"></i> <a href="https://www.emu.edu.tr/tr" target="_blank">Doğu Akdeniz Üniversitesi</a>
+                    </span>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item"><a href="https://www.emu.edu.tr/tr" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Yardım</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /footer -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+</body>
+</html>
+
